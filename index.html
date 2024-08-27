@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Formulário completo</h1>
+
+    <form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on" novalidate accept-charset="UTF-8" target="_blank"
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required maxlength="100">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" placeholder="seuemail@seuemail.com" required maxlength="100" >
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required minlength="8" maxlength="12" >
+
+            <label for="idade">idade:</label>
+            <input type="number" id="idade" name="idade" placeholder="idade" required min="18" maxlength="100" >
+
+            <label for="data-nascimento">Data de nascimento:</label>
+            <input type="date" id="data de nascimento" name="data de nascimento">
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" placeholder="https://seuwebsite.com">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências</legend>
+
+            <label>Gênero</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" checked>
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="feminimo" name="genero" value="feminimo" checked>
+            <label for="feminimo">Feminimo</label>
+
+            <input type="radio" id="outros" name="genero" value="outros" checked>
+            <label for="outros">Outros</label>
+
+
+            <label>Interesses: </label>
+            <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
+            <label for="tecnologia">Tecnologia</label>
+
+            <input type="checkbox" id="esportes" name="interesses" value="tecnologia">
+            <label for="esportes">Esportes</label>
+
+            <input type="checkbox" id="comida" name="interesses" value="tecnologia">
+            <label for="comida">Comida</label>
+
+
+            <label for="cidade">Cidade:</label>
+            <select name="Cidade" id="cidade">
+            <option value="sao-paulo">São Paulo</option>
+            <option value="rio-janeiro">Rio de Janeiro</option>
+            <option value="belo-horizonte">Belo Horizonte</option>
+            <option value="brasilia">Brasília</option>
+            <option value="curitiba">Curitiba</option>
+            </select>
+
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" placeholder=" Sobre você: " required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Envio de arquivos
+            </legend>
+            <label for="foto">
+                Foto de perfil
+            </label>
+            <input type="file" id="foto" accept="image/png. image/png" required>
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
